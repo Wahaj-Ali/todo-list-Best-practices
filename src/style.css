@@ -1,0 +1,100 @@
+body {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 20px;
+  width: 305px;
+  justify-content: space-between;
+}
+
+.heading h1 {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.tasklist {
+  width: 325px;
+}
+
+#tasks {
+  list-style: none;
+  padding: 0;
+}
+
+#taskchk {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+}
+
+#taskdiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 20px;
+  margin-bottom: 1px;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  gap: 10%;
+  flex-direction: column;
+}
+
+.item label {
+  width: 325px;
+}
+
+.list-head {
+  display: flex;
+}
+
+.list-head input {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 20px;
+  width: 305px;
+  border: none;
+}
+
+.list-head button {
+  position: absolute;
+  display: none;
+}
+
+.clear button {
+  border: none;
+  width: 325px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 15px;
+  box-shadow: 0 2px 20px;
+}
+
+.itme-desc {
+  width: 267px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-div {
+  display: flex;
+  gap: 6px;
+}
