@@ -23,9 +23,7 @@ const displayTasks = () => {
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
       checkbox.id = 'checkbox';
-      if (a.completed === true) {
-        checkbox.checked = 'checked';
-      }
+      if (a.completed === true) checkbox.checked = 'checked';
 
       checkbox.onclick = (e) => {
         todo.completedTask(e.target.checked, a.index);
@@ -39,9 +37,7 @@ const displayTasks = () => {
       list.appendChild(descrptContainer);
 
       descrpt.addEventListener('keyup', (e) => {
-        if (e.key === 'Enter') {
-          todo.editTask(descrpt, a.index);
-        }
+        if (e.key === 'Enter') todo.editTask(descrpt, a.index);
       });
 
       const deleteIcon = document.createElement('i');
